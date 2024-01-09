@@ -12,7 +12,7 @@ For a complete description about nodes and validators, check out the [BlockX Doc
 
 ## 🔗 Networks
 
-### [`BlockX_100-1`](./chains/blockx-100-1/README.md)
+### [`BlockX_100-1`](./chains/blockx_100-1/README.md)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 ![audience](https://img.shields.io/badge/audience-public-white.svg)
@@ -22,7 +22,7 @@ Mainnet is comming on January 10, 2024 !
 
 ### [`BlockX-50-1`](./chains/blockx_50-1/README.md)
 
-![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg)
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
 `BlockX_50-1` is the current BlockX testnet. Please find more details to join the network [here](chains/blockx_50-1/).
