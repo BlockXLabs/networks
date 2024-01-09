@@ -12,23 +12,23 @@ For a complete description about nodes and validators, check out the [BlockX Doc
 
 ## 🔗 Networks
 
-### [`BlockX-1`](./chains/blockx-1/README.md)
+### [`BlockX_100-1`](./chains/blockx-100-1/README.md)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
-Mainnet is comming soon !
+Mainnet is comming on January 10, 2024 !
 
 
-### [`BlockX-testnet-2`](./chains/BlockX-testnet-2/README.md)
+### [`BlockX-50-1`](./chains/blockx_50-1/README.md)
 
 ![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg)
 ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
-`BlockX_12345-1` is the current BlockX testnet. Please find more details to join the network [here](chains/nemeton-1/).
+`BlockX_50-1` is the current BlockX testnet. Please find more details to join the network [here](chains/blockx_50-1/).
 
 
-### [`BlockX_12345-1`](./chains/BlockX_12345-1/README.md)
+### [`BlockX_12345-1`](./chains/blockX_12345-1/README.md)
 
 ![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)
 ![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg)
@@ -37,7 +37,7 @@ Mainnet is comming soon !
 This was the first BlockX `testnet` but it is now discontinued.
 
 
-We invite all the validators to shutdown their nodes. You can still find more details on the network [here](chains/nemeton/).
+We invite all the validators to shutdown their nodes. You can still find more details on the network [here](chains/blockx_12345-1/).
 
 
 ## 👨‍⚖️ Want to become a validator?
