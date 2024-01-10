@@ -4,11 +4,11 @@
 ![chain-id](https://img.shields.io/badge/chain%20id-blockx__100--1-blue?style=for-the-badge)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--01--10T12%3A00_UTC-blue?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--01--15T12%3A00_UTC-blue?style=for-the-badge)
 
 ## Register in the Genesis
 
-> ℹ️ **Registration has ended last January 5, 2024 🧙‍♂️**. See [Nemeton program](https://nemeton.okp4.network/).
+> ℹ️ **Registration has ended last January 5, 2024 🧙‍♂️**. 
 
 Interested Validators had to submit their gentx 
 
@@ -47,15 +47,31 @@ seeds="cd462b62d54296ab4550d7c1ed5baafe5653faa6@137.184.7.64:26656,fbaf65d8f2732
 
 ```
 
-To start the chain, copy the genesis.json file in this folder then paste it in .blockx/config in your node. There are some instances where running ./blockxd start causes an "unauthorized" error so before you paste this new genesis.file, try to run ./blockxd start first with your original genesis.json (but make sure that the genesis_time is in the future) that was generated when you first created your gentx. If that results to something below then try to paste the genesis file provided here. Upon pasting and running './blockxd start' it should also result to something like the one below.
+To start the chain:
+1) Using your existing genesis file, edit the genesis_time to a future date. Your genesis file is located in /root/.blockxd/config. The genesis_time is the first line in the file.
 
 ```sh
-Genesis time is in the future. Sleeping until then... genTime=2024-01-15T00:00:01Z server=node
+"genesis_time": "2024-01-15T12:00:01Z",
+```
+
+2) After editing the genesis_time, run ./blockxd start in which will show something like this below
+```sh
+Genesis time is in the future. Sleeping until then... genTime=2024-01-15T12:00:01Z server=node
 Starting pprof server laddr=localhost:6060 server=node
 
 ```
 
-If you're still having errors, you can try deleting the data folder located in .blockxd except for the file named priv_validator_state.json. Check the file as well if it is the same to something like this. If not, edit it accordingly.
+3) If you're able to run it without any errors, stop the blockxd then it is now time to copy the genesis file(./genesis.json) in this repo. It is best to make a copy of your original genesis.json file before overwriting it.
+
+4) Run the ./blockxd start command again which should again show something like this below
+
+```sh
+Genesis time is in the future. Sleeping until then... genTime=2024-01-15T12:00:01Z server=node
+Starting pprof server laddr=localhost:6060 server=node
+
+```
+
+If you're still having errors, you can try deleting the data folder located in /root/.blockxd except for the file named priv_validator_state.json. Check the file as well if it is the same to something like this. If not, edit it accordingly.
 
 ```sh
 {
