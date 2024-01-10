@@ -40,3 +40,27 @@ blockxd gentx your-key-name 100000000000000000000000abcx \
   --security-contact "contact@blockxnet.com"
 ```
 
+You can use this nodes before as seeds to start the network. You can configure it under the config.toml file located in .blockxd/config folder
+
+```sh
+seeds="cd462b62d54296ab4550d7c1ed5baafe5653faa6@137.184.7.64:26656,fbaf65d8f2732cb19269569763de4b75d84f5f52@147.182.238.235:26656,5f21477b66cce124fc61167713243d8de30a9572@137.184.38.212:26656,abddf4491980d5e6c31b44e3640610c77d475d89@146.190.153.165:26656"
+
+```
+
+To start the chain, copy the genesis.json file in this folder then paste it in .blockx/config in your node. There are some instances where running ./blockxd start causes an "unauthorized" error so before you paste this new genesis.file, try to run ./blockxd start first with your original genesis.json (but make sure that the genesis_time is in the future) that was generated when you first created your gentx. If that results to something below then try to paste the genesis file provided here. Upon pasting and running './blockxd start' it should also result to something like the one below.
+
+```sh
+Genesis time is in the future. Sleeping until then... genTime=2024-01-15T00:00:01Z server=node
+Starting pprof server laddr=localhost:6060 server=node
+
+```
+
+If you're still having errors, you can try deleting the data folder located in .blockxd except for the file named priv_validator_state.json. Check the file as well if it is the same to something like this. If not, edit it accordingly.
+
+```sh
+{
+  "height": "0",
+  "round": 0,
+  "step": 0
+}
+```
