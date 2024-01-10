@@ -61,7 +61,7 @@ Starting pprof server laddr=localhost:6060 server=node
 
 ```
 
-3) If you're able to run it without any errors, stop the blockxd then it is now time to copy the genesis file(./genesis.json) in this repo. It is best to make a copy of your original genesis.json file before overwriting it.
+3) If you're able to run it without any errors, stop the blockxd then it is now time to copy the [genesis file](./genesis.json) in this repo. It is best to make a copy of your original genesis.json file before overwriting it.
 
 4) Run the ./blockxd start command again which should again show something like this below
 
