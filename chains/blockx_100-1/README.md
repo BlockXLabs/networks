@@ -20,14 +20,14 @@ blockxd init your-moniker --chain-id blockx_100-1
 blockxd keys add your-key-name
 
 # Set account necessary balance
-blockxd add-genesis-account your-key-name 100000000000000000000000abcx
+blockxd add-genesis-account your-key-name 10000000000000000000000abcx
 ```
 
 You can also edit the other values such as commission rate, website, contact and others.
 
 ```sh
 # Create the gentx
-blockxd gentx your-key-name 100000000000000000000000abcx \
+blockxd gentx your-key-name 10000000000000000000000abcx \
   --node-id $(blockxd tendermint show-node-id) \
   --chain-id blockx_100-1 \
   --commission-rate 0.05 \
