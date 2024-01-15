@@ -85,3 +85,19 @@ To verify that the genesis.json file is correct, 'shasum -a 256 genesis.json'
 ```sh
 bdffe193d55e42d8686ea1cb9445b4244eafc05693fbdf8c53f63b41749e9c8a
 ```
+
+Ping Explorer:
+[Mainnet](https://ping.blockxnet.com/blockx), 
+[Testnet](https://ping.blockxnet.com/blockx-atlantis-testnet)
+
+EVM Explorer: 
+Coming soon
+
+RPC URL: 
+[https://rpc.blockxnet.com](https://rpc.blockxnet.com)
+
+API URL:
+[https://api.blockxnet.com](https://api.blockxnet.com)
+
+Web3 RPC
+[https://web3.blockxnet.com](https://web3.blockxnet.com)
