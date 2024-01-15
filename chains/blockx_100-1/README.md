@@ -80,3 +80,8 @@ If you're still having errors, you can try deleting the data folder located in /
   "step": 0
 }
 ```
+
+To verify that the genesis.json file is correct, 'shasum -a 256 genesis.json'
+```sh
+bdffe193d55e42d8686ea1cb9445b4244eafc05693fbdf8c53f63b41749e9c8a
+```
