@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-01-16T12:00:00Z",
+  "genesis_time": "2024-01-16T02:30:00Z",
   "chain_id": "blockx_100-1",
   "initial_height": "1",
   "consensus_params": {

@@ -17,7 +17,7 @@ For a complete description about nodes and validators, check out the [BlockX Doc
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
-Mainnet is comming on January 10, 2024 !
+Mainnet is comming on January 16, 2024 !
 
 
 ### [`BlockX-50-1`](./chains/blockx_50-1/README.md)

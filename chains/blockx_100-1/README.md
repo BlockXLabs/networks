@@ -82,7 +82,7 @@ If you're still having errors, you can try deleting the data folder located in /
 
 To verify that the genesis.json file is correct, 'shasum -a 256 genesis.json'
 ```sh
-363ce0d9f813c51e0cca3218049354b7472b9aa1bf0325cbd9e08f2562eb5b86
+cdd0211f39c65c264b00c85eac8eb7022a0594befc8aba6abe9b648fd78a1809
 ```
 
 Ping Explorer:
