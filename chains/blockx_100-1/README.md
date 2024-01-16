@@ -4,7 +4,7 @@
 ![chain-id](https://img.shields.io/badge/chain%20id-blockx__100--1-blue?style=for-the-badge)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--01--15T12%3A00_UTC-blue?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--01--16T12%3A00_UTC-blue?style=for-the-badge)
 
 ## Register in the Genesis
 
@@ -43,20 +43,19 @@ blockxd gentx your-key-name 10000000000000000000000abcx \
 You can use this nodes before as seeds to start the network. You can configure it under the config.toml file located in .blockxd/config folder
 
 ```sh
-seeds="cd462b62d54296ab4550d7c1ed5baafe5653faa6@137.184.7.64:26656,82435c0df883bb8ae251182c81f5b7292f683e79@147.182.238.235:26656,5f21477b66cce124fc61167713243d8de30a9572@137.184.38.212:26656,abddf4491980d5e6c31b44e3640610c77d475d89@146.190.153.165:26656"
-
+seeds="479dfa1948f49b08810cd16bf6c2d3256ae85423@137.184.7.64:26656,e15f4d31281036c69fa17269d9b26ff8733511c6@147.182.238.235:26656,9b84b33d44a880a520006ae9f75ef030b259cbaf@137.184.38.212:26656,85d0069266e78896f9d9e17915cdfd271ba91dfd@146.190.153.165:26656"
 ```
 
 To start the chain:
 1) Using your existing genesis file, edit the genesis_time to a future date. Your genesis file is located in /root/.blockxd/config. The genesis_time is the first line in the file.
 
 ```sh
-"genesis_time": "2024-01-15T12:00:01Z",
+"genesis_time": "2024-01-16T12:00:00Z",
 ```
 
 2) After editing the genesis_time, run ./blockxd start in which will show something like this below
 ```sh
-Genesis time is in the future. Sleeping until then... genTime=2024-01-15T12:00:01Z server=node
+Genesis time is in the future. Sleeping until then... genTime=2024-01-16T12:00:00Z server=node
 Starting pprof server laddr=localhost:6060 server=node
 
 ```
@@ -66,7 +65,7 @@ Starting pprof server laddr=localhost:6060 server=node
 4) Run the ./blockxd start command again which should again show something like this below
 
 ```sh
-Genesis time is in the future. Sleeping until then... genTime=2024-01-15T12:00:01Z server=node
+Genesis time is in the future. Sleeping until then... genTime=2024-01-16T12:00:00Z server=node
 Starting pprof server laddr=localhost:6060 server=node
 
 ```
@@ -83,7 +82,7 @@ If you're still having errors, you can try deleting the data folder located in /
 
 To verify that the genesis.json file is correct, 'shasum -a 256 genesis.json'
 ```sh
-bdffe193d55e42d8686ea1cb9445b4244eafc05693fbdf8c53f63b41749e9c8a
+363ce0d9f813c51e0cca3218049354b7472b9aa1bf0325cbd9e08f2562eb5b86
 ```
 
 Ping Explorer:
