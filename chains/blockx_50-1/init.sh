@@ -6,7 +6,7 @@ MONIKER="Testnet-RPC"
 KEYRING="file" 
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
-TOTAL_SUPPLY="1400000000000000000000000000abcx"
+TOTAL_SUPPLY="1400000000000000000000000000"
 MY_TOKENS="350000000000000000000000000abcx"
 
 
@@ -27,7 +27,7 @@ blockxd config keyring-backend $KEYRING
 blockxd config chain-id $CHAINID
 
 # if $KEY exists it should be deleted
-blockxd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO --recover
+blockxd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
 
 # Set moniker and chain-id for blockx (Moniker can be anything, chain-id must be an integer)
 blockxd init $MONIKER --chain-id $CHAINID
