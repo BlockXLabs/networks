@@ -125,7 +125,25 @@
           "amount": "1400000000000000000000000000"
         }
       ],
-      "denom_metadata": []
+      "denom_metadata": [
+        {
+          "description": "The native staking and governance token of the Atlantis chain",
+              "denom_units": [
+                  {
+                    "denom": "abcx",
+                    "exponent": 0
+                  },
+                  {
+              "denom": "bcx",
+              "exponent": 18
+            }
+          ],
+          "base": "abcx",
+          "display": "bcx",
+          "name": "BlockX Network",
+          "symbol": "BCX"
+        }
+      ]
     },
     "bridge": {
       "params": {}
@@ -442,7 +460,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "172800s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
