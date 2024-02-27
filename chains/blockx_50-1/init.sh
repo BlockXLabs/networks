@@ -1,7 +1,7 @@
 #!/bin/bash
 
 KEY="testnet-rpc"
-CHAINID="blockx_50-1"
+CHAINID="blockx_190-1"
 MONIKER="Testnet-RPC"
 KEYRING="file" 
 KEYALGO="eth_secp256k1"
@@ -33,7 +33,7 @@ blockxd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
 blockxd init $MONIKER --chain-id $CHAINID
 
 # Change parameter token denominations to abcx
-cat $HOME/.blockxd/config/genesis.json | jq '.genesis_time = "2024-02-26T08:00:00.0Z"' > $HOME/.blockxd/config/tmp_genesis.json && mv $HOME/.blockxd/config/tmp_genesis.json $HOME/.blockxd/config/genesis.json
+cat $HOME/.blockxd/config/genesis.json | jq '.genesis_time = "2024-02-27T03:00:00.0Z"' > $HOME/.blockxd/config/tmp_genesis.json && mv $HOME/.blockxd/config/tmp_genesis.json $HOME/.blockxd/config/genesis.json
 cat $HOME/.blockxd/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="abcx"' > $HOME/.blockxd/config/tmp_genesis.json && mv $HOME/.blockxd/config/tmp_genesis.json $HOME/.blockxd/config/genesis.json
 cat $HOME/.blockxd/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="abcx"' > $HOME/.blockxd/config/tmp_genesis.json && mv $HOME/.blockxd/config/tmp_genesis.json $HOME/.blockxd/config/genesis.json
 cat $HOME/.blockxd/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="abcx"' > $HOME/.blockxd/config/tmp_genesis.json && mv $HOME/.blockxd/config/tmp_genesis.json $HOME/.blockxd/config/genesis.json
@@ -57,7 +57,7 @@ cd ~/.blockxd/config
 jq '.app_state.slashing.params.signed_blocks_window = "40000"' genesis.json > temp.json && mv temp.json genesis.json
 jq '.app_state.slashing.params.min_signed_per_window = "0.500000000000000000"' genesis.json > temp.json && mv temp.json genesis.json
 jq '.app_state.slashing.params.slash_fraction_double_sign = "0.080000000000000000"' genesis.json > temp.json && mv temp.json genesis.json
-jq '.app_state.gov.voting_params.voting_period = "604800s"' genesis.json > temp.json && mv temp.json genesis.json
+jq '.app_state.gov.voting_params.voting_period = "172800s"' genesis.json > temp.json && mv temp.json genesis.json
 
 cd /root/go/bin
 blockxd validate-genesis
