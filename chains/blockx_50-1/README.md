@@ -1,1 +1,0 @@
-# BlockX testnet 2
