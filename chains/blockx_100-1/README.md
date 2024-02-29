@@ -1,5 +1,5 @@
 <!-- generated file - do not edit -->
-# 🔗 `blockx_100-1`
+# 🔗 `BlockX Chain`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-blockx__100--1-blue?style=for-the-badge)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)

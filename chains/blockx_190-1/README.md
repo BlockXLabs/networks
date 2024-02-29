@@ -1,5 +1,5 @@
 <!-- generated file - do not edit -->
-# 🔗 `blockx_190-1`
+# 🔗 `BlockX Testnet (Atlantis)`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-blockx__190--1-blue?style=for-the-badge)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
@@ -52,7 +52,7 @@ It will prompt you to create a keyring passphrase, make sure you remember it as 
 
 # How to become a validator using Ubuntu 22.04
 Make sure to request for some BCX tokens first from the BCX Team or you can get some from [here](https://ping.blockxnet.com/blockx-atlantis-testnet/faucet)
-```
+
 Once you already have a node running run the ./run-validator.sh file in this folder
 
 Ping Explorer:
@@ -61,6 +61,7 @@ Ping Explorer:
 
 EVM Explorer: 
 Coming soon
+
 
 Testnet RPC URL: 
 [https://atlantis-rpc.blockxnet.com](https://atlantis-rpc.blockxnet.com)
