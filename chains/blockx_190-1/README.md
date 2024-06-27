@@ -71,11 +71,29 @@ EVM Explorer:
 [Mainnet](https://explorer.blockxnet.com/), 
 [Testnet](https://testnet-explorer.blockxnet.com/)
 
-Mainnet RPC URL: https://rpc.blockxnet.com
-Testnet RPC URL: https://atlantis-rpc.blockxnet.com
+Mainnet RPC URL: 
+```sh
+https://rpc.blockxnet.com
+```
+Testnet RPC URL: 
+```sh
+https://atlantis-rpc.blockxnet.com
+```
 
-Mainnet API URL: https://api.blockxnet.com
-Testnet API URL: https://atlantis-api.blockxnet.com
+Mainnet API URL: 
+```sh
+https://api.blockxnet.com
+```
+Testnet API URL: 
+```sh
+https://atlantis-api.blockxnet.com
+```
 
-Mainnet Web3 RPC: https://web3.blockxnet.com
-Testnet Web3 RPC: https://atlantis-web3.blockxnet.com
+Mainnet Web3 RPC: 
+```sh
+https://web3.blockxnet.com
+```
+Testnet Web3 RPC: 
+```sh
+https://atlantis-web3.blockxnet.com
+```
