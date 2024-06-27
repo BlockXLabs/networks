@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHAINID="blockx_50-1"            # Chain ID
+CHAINID="blockx_100-1"            # Chain ID
 MONIKER="My Moniker"                # Moniker of your node
 KEYRING="file"                      # Keyring Backend
 KEY="mykey"                         # key name from which validator will be created
