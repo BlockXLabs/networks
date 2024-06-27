@@ -1,73 +1,81 @@
 <!-- generated file - do not edit -->
-# 🔗 `BlockX Testnet (Atlantis)`
+# 🔗 `BlockX Chain`
 
-![chain-id](https://img.shields.io/badge/chain%20id-blockx__190--1-blue?style=for-the-badge)
+![chain-id](https://img.shields.io/badge/chain%20id-blockx__100--1-blue?style=for-the-badge)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--02--27T12%3A00_UTC-blue?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--01--16T12%3A00_UTC-blue?style=for-the-badge)
 
-# Pre-requisites:
-Go version 1.18
 
-Ubuntu 22.04
 
-# Pre-requisite step
-## 1) Install Golang:
-Install latest go version https://golang.org/doc/install
+> ℹ️ **The Mainnet is now using Chain ID 190 🧙‍♂️**. 
 
-```
-wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash -s -- --version 1.18
+## Install the Prerequisites 
+
+Make sure that you're running at least Ubuntu 22
+Install Go
+
+```sh
+get -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash -s -- --version 1.18
 source ~/.profile
 ```
 
-To verify that Golang installed
-```
-go version
-```
+Install Make to compile the code
 
-It should return go version go1.18 linux/amd64 or later
-
-# How to run a fullnode using Ubuntu 22.04
-```
-git clone https://github.com/BlockXLabs/networks.git
-cd chains/blockx_190-1
-./run-fullnode.sh
+```sh
+sudo apt install make
 ```
 
-# How to add blockxd path for it to be accessible system-wide
-In the example below, blockxd is in /root/go/bin
+Install GCC in case GCC is not yet installed
+
+```sh
+sudo apt-get install gcc
 ```
-export PATH=/root/go/bin:$PATH
-source ~/.bashrc
+
+## Run the scripts
+Get the source code
+```sh
+git clone https://github.com/BlockXLabs/networks
+git cd chains/blockx_190-1/source
 ```
 
-
-# How to add a key 
+Compile blockxd
+```sh
+git clone https://github.com/BlockXLabs/networks
+git cd chains/blockx_190-1/source
 ```
-blockxd keys add <your key name> --keyring-backend file --algo eth_secp256k1
-# e.g.  blockxd keys add mykey --keyring-backend file --algo eth_secp256k1
+
+Run a node. Feel free to edit the script first according to your own data like the moniker
+```sh
+chmod +x run_node.sh
+./run_node.sh
 ```
-It will prompt you to create a keyring passphrase, make sure you remember it as you're going to need this for every transactions. After entering the passphrase, it will give you your address together with a recovery phrase, make sure to have a copy of it. You can use this passphrase to import your key/wallet to another wallet like Metamask.
 
+Verify that the node is running
+```sh
+./blockxd status
+```
 
-# How to become a validator using Ubuntu 22.04
-Make sure to request for some BCX tokens first from the BCX Team or you can get some from [here](https://ping.blockxnet.com/blockx-atlantis-testnet/faucet)
+To be a validator, run the script below but change some of the values like Moniker, Key, etc
+```sh
+chmod +x run_validator.sh
+./run_validator.sh
+```
 
-Once you already have a node running run the ./run-validator.sh file in this folder
 
 Ping Explorer:
 [Mainnet](https://ping.blockxnet.com/blockx), 
 [Testnet](https://ping.blockxnet.com/blockx-atlantis-testnet)
 
 EVM Explorer: 
-Coming soon
+[Mainnet](https://explorer.blockxnet.com/), 
+[Testnet](https://testnet-explorer.blockxnet.com/)
 
+Mainnet RPC URL: https://rpc.blockxnet.com
+Testnet RPC URL: https://atlantis-rpc.blockxnet.com
 
-Testnet RPC URL: 
-[https://atlantis-rpc.blockxnet.com](https://atlantis-rpc.blockxnet.com)
+Mainnet API URL: https://api.blockxnet.com
+Testnet API URL: https://atlantis-api.blockxnet.com
 
-API URL:
-[https://atlantis-api.blockxnet.com](https://atlantis-api.blockxnet.com)
-
-Web3 RPC
-[https://atlantis-web3.blockxnet.com](https://atlantis-web3.blockxnet.com)
+Mainnet Web3 RPC: https://web3.blockxnet.com
+Testnet Web3 RPC: https://atlantis-web3.blockxnet.com
