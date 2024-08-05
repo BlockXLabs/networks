@@ -1,9 +1,9 @@
 #!/bin/bash
 
 CHAINID="blockx_19191-1"            # Chain ID
-MONIKER="BCX_node3_az"                # Moniker of your node
+MONIKER="MyMoniker"                # Moniker of your node
 KEYRING="file"                      # Keyring Backend
-KEY="bcx_node2_az"                         # key name from which validator will be created
+KEY="Changethiskey"                         # key name from which validator will be created
 AMOUNT=10000abcx                 # Self-delegation amount
 COMMISSION_RATE=0.05                # Commission rate
 COMMISSION_MAX_RATE=0.10            # Commission max rate
