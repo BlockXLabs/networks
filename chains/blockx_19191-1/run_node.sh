@@ -13,7 +13,7 @@ sudo rm -rf $HOME/.blockxd
 cp blockxd.service /etc/systemd/system
 
 # Download blockxd
-curl -LO https://github.com/defi-ventures/BCX-atlantis-testnet-2-node-compiled/releases/download/assets/blockxd
+curl -LO https://github.com/BlockXLabs/networks/releases/download/binary/blockxd
 chmod +x blockxd
 
 # Create /go/bin if not yet present
@@ -35,7 +35,7 @@ export DAEMON_HOME=$HOME/.blockxd  # daemon's home directory
 
 cd $HOME/.blockxd/config
 
-sed -i 's/seeds = \"\"/seeds = \"f283e46301321e574a298fba910344b90a58beca@52.165.82.233:26656\"/g' config.toml
+sed -i 's/seeds = \"\"/seeds = \"7c81208ef56da0a6058d3b4f2d124c5b7715a6bc@20.15.205.205:26656,f283e46301321e574a298fba910344b90a58beca@52.165.82.233:26656\"/g' config.toml
 
 systemctl daemon-reload
 systemctl start blockxd.service
