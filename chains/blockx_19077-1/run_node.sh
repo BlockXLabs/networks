@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MONIKER="My_Node"
+MONIKER="MyMoniker"
 PROJECT_DIR=$PWD
 
 # Stop & remove old data
@@ -13,7 +13,7 @@ sudo rm -rf $HOME/.blockxd
 cp blockxd.service /etc/systemd/system
 
 # Download blockxd
-curl -LO https://github.com/defi-ventures/BCX-atlantis-testnet-2-node-compiled/releases/download/assets/blockxd
+curl -LO https://github.com/BlockXLabs/networks/releases/download/binary/blockxd
 chmod +x blockxd
 
 # Create /go/bin if not yet present
@@ -22,9 +22,9 @@ cp blockxd /root/go/bin
 
 # init binary
 cd /root/go/bin
-./blockxd config chain-id blockx_190-1
+./blockxd config chain-id blockx_19077-1
 ./blockxd config keyring-backend file
-./blockxd init $MONIKER --chain-id blockx_190-1 --keyring-backend file
+./blockxd init $MONIKER --chain-id blockx_19191-1 --keyring-backend file
 
 cd $PROJECT_DIR
 cp genesis.json $HOME/.blockxd/config
